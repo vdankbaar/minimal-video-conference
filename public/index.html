@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <title>Example</title>
+  </head>
+
+  <body>
+    <div id="roomSelect">
+      <h1>Example server</h1>
+      <label for="room-input">Room number</label>
+      <input id="room-input" type="number" autocomplete="off" autofocus/>
+      <button id="connect-button">Connect</button>
+    </div>
+
+    <div id="roomScreen" style="display: none">
+        <div id="videoGrid">
+            <div id="localVideoDiv">
+                <video autoplay="autoplay" muted="muted"></video>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+  </body>
+</html>
